@@ -1,3 +1,108 @@
 body {
+background-color: orange;
+font-family: Arial, sans-serif;
+padding: 1rem;
 min-height: 200vh;
+}
+
+header {
+background-color: yellow;
+padding: 1rem;
+
+display: flex;
+gap: 1rem;
+}
+
+header > nav {
+background-color: blue;
+flex-grow: 1;
+}
+
+ul {
+list-style: none;
+display: flex;
+gap: 1rem;
+justify-content: space-between;
+align-items: center;
+height: 100%;
+padding: 0 1rem; /* Réduisez le padding */
+max-width: 400px; /* Limitez la largeur */
+margin: 0 auto;
+}
+
+li > a {
+text-decoration: none;
+color: black;
+}
+
+li > a:hover,
+li > a:focus,
+li > a:active {
+font-weight: bold;
+}
+
+
+main {
+background-color: rgb(25, 171, 25);
+padding: 1rem;
+margin: 1rem 0;
+
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+.section-1 {
+background-color: yellow;
+padding: 1rem;
+
+display: flex;
+gap: 1rem;
+flex-direction: column;
+}
+
+.section-1 > div {
+display: flex;
+gap: 1rem;
+flex-direction: row;
+justify-content: center;
+align-items: stretch; /* Pour que toutes les cases aient la même hauteur */
+}
+
+.section-1 > div > div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: rgb(34, 207, 210);
+flex: 1; /* flex: 1 1 0 pour égaliser les tailles */
+min-height: 150px;
+gap: 1rem;
+text-align: center;
+padding: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+.section-1 > div{
+    flex-direction: column;
+}
+}
+.section-2 {
+background-color: yellow;
+padding: 1rem;
+
+display: flex;
+gap: 1rem;
+flex-direction: column;
+}
+
+label {
+display: block;
+margin-bottom: 0.5rem;
+}
+
+footer {
+background-color: pink;
+padding: 1rem;
+text-align: center;
 }
